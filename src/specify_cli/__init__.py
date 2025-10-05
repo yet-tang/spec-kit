@@ -77,6 +77,7 @@ AI_CHOICES = {
     "kilocode": "Kilo Code",
     "auggie": "Auggie CLI",
     "roo": "Roo Code",
+    "trae": "Trae AI",
 }
 # Add script type choices
 SCRIPT_TYPE_CHOICES = {"sh": "POSIX Shell (bash/zsh)", "ps": "PowerShell"}
@@ -434,7 +435,7 @@ def init_git_repo(project_path: Path, quiet: bool = False) -> bool:
 
 
 def download_template_from_github(ai_assistant: str, download_dir: Path, *, script_type: str = "sh", verbose: bool = True, show_progress: bool = True, client: httpx.Client = None, debug: bool = False, github_token: str = None) -> Tuple[Path, dict]:
-    repo_owner = "github"
+    repo_owner = "yet-tang"
     repo_name = "spec-kit"
     if client is None:
         client = httpx.Client(verify=ssl_context)
@@ -1030,7 +1031,8 @@ def init(
         "kilocode": ".kilocode/",
         "auggie": ".augment/",
         "copilot": ".github/",
-        "roo": ".roo/"
+        "roo": ".roo/",
+        "trae": ".trae/"
     }
     
     if selected_ai in agent_folder_map:
