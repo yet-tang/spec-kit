@@ -172,6 +172,9 @@ build_variant() {
     roo)
       mkdir -p "$base_dir/.roo/commands"
       generate_commands roo md "\$ARGUMENTS" "$base_dir/.roo/commands" "$script" ;;
+    trae)
+      mkdir -p "$base_dir/.trae/rules"
+      generate_commands trae md "\$ARGUMENTS" "$base_dir/.trae/rules" "$script" ;;
   esac
   ( cd "$base_dir" && zip -r "../spec-kit-template-${agent}-${script}-${NEW_VERSION}.zip" . )
   echo "Created $GENRELEASES_DIR/spec-kit-template-${agent}-${script}-${NEW_VERSION}.zip"
