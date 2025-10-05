@@ -6,7 +6,7 @@ set -euo pipefail
 # Usage: .github/workflows/scripts/create-release-packages.sh <version>
 #   Version argument should include leading 'v'.
 #   Optionally set AGENTS and/or SCRIPTS env vars to limit what gets built.
-#     AGENTS  : space or comma separated subset of: claude gemini copilot cursor qwen opencode windsurf codex (default: all)
+#     AGENTS  : space or comma separated subset of: claude gemini copilot cursor qwen opencode windsurf codex kilocode auggie roo trae (default: all)
 #     SCRIPTS : space or comma separated subset of: sh ps (default: both)
 #   Examples:
 #     AGENTS=claude SCRIPTS=sh $0 v0.2.0
@@ -178,7 +178,7 @@ build_variant() {
 }
 
 # Determine agent list
-ALL_AGENTS=(claude gemini copilot cursor qwen opencode windsurf codex kilocode auggie roo)
+ALL_AGENTS=(claude gemini copilot cursor qwen opencode windsurf codex kilocode auggie roo trae)
 ALL_SCRIPTS=(sh ps)
 
 
