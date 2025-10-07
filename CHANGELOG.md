@@ -11,7 +11,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Support for using `.` as a shorthand for current directory in `specify init .` command, equivalent to `--here` flag but more intuitive for users
+- **Major UX Design Enhancement**: Complete integration of user experience design into the Spec-Driven Development workflow
+- **New UX-Specific Commands**:
+  - `/clarify-ux`: Deep clarification of UX design requirements with focus areas (research, interaction, visual, accessibility)
+  - `/validate-ux`: Specialized validation for UX design completeness and quality
+- **Enhanced Specification Template** (`templates/spec-template.md`):
+  - Comprehensive "用户体验设计 (UX Design)" section with 7 core UX areas
+  - User research insights, information architecture, interaction design, visual design requirements
+  - Micro-interactions, animations, and usability testing requirements
+  - Enhanced requirements checklist with UX design depth verification
+- **New UX Design Template** (`templates/ux-design-template.md`):
+  - Complete UX design documentation framework
+  - User research, journey mapping, interaction flows, visual design systems
+  - Accessibility compliance, responsive design, and usability testing plans
+- **Enhanced Plan Template** (`templates/plan-template.md`):
+  - New "1.1 UX 设计设计" phase with 5 UX design deliverables
+  - Parallel UX design and technical design workflow
+  - UX-specific task generation strategy
+- **Enhanced Tasks Template** (`templates/tasks-template.md`):
+  - New "阶段3.2：UX 设计实施" with 9 specific UX development tasks
+  - UX testing tasks (UI components, end-to-end, accessibility, responsive)
+  - Enhanced task generation rules for UX deliverables
+- **New Validation Scripts**:
+  - `validate-specification.sh/.ps1`: Cross-platform specification validation with scope-based checking
+  - `clarify-ux-requirements.sh/.ps1`: UX-specific requirement clarification with focus areas
+- **Requirements Traceability Template** (`templates/traceability-template.md`):
+  - Complete traceability matrix from business requirements to test cases
+  - Quality metrics and change tracking capabilities
+- **Updated Documentation**:
+  - `docs/ux-design-guide.md`: Comprehensive UX design guide for Spec Kit
+  - Enhanced CLAUDE.md, README.md, and AGENTS.md with UX features
+- **Support for using `.` as a shorthand for current directory in `specify init .` command, equivalent to `--here` flag but more intuitive for users
+
+### Changed
+
+- **Enhanced Constitution Template**: Added comprehensive demand review principles and quality gates
+- **Improved Task Generation**: Now includes UX design tasks alongside technical implementation tasks
+- **Extended CLI Help**: Updated help text to include new UX-specific commands and workflows
+
+### Fixed
+
+- Better handling of requirement simplification issues through comprehensive UX validation
+- Improved requirement gap identification with specialized UX focus areas
 
 ## [0.0.17] - 2025-09-22
 

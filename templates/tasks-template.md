@@ -46,49 +46,92 @@
 - [ ] T001 根据实施计划创建项目结构
 - [ ] T002 使用 [框架] 依赖初始化 [语言] 项目
 - [ ] T003 [P] 配置代码检查和格式化工具
+- [ ] T004 [P] 设置 UI 开发环境和构建工具
+- [ ] T005 [P] 创建设计系统组件库结构
 
-## 阶段3.2：测试优先（TDD）⚠️ 必须在3.3之前完成
+## 阶段3.2：UX 设计实施
+*基于 ux-*.md 设计文档进行实现*
+- [ ] T006 [P] 创建用户研究总结和用户画像文档
+- [ ] T007 [P] 实现信息架构和导航结构
+- [ ] T008 [P] 开发核心 UI 组件（按钮、表单、布局等）
+- [ ] T009 [P] 实现响应式设计断点和适配
+- [ ] T010 [P] 开发微交互和动画效果
+- [ ] T011 [P] 实现可访问性功能（ARIA、键盘导航）
+- [ ] T012 创建低保真原型（线框图）
+- [ ] T013 创建高保真原型（视觉稿）
+- [ ] T014 进行可用性测试和迭代
+
+## 阶段3.3：测试优先（TDD）⚠️ 必须在3.4之前完成
 **关键：这些测试必须编写且必须在任何实施之前失败**
-- [ ] T004 [P] 在 tests/contract/test_users_post.py 中进行 POST /api/users 合约测试
-- [ ] T005 [P] 在 tests/contract/test_users_get.py 中进行 GET /api/users/{id} 合约测试
-- [ ] T006 [P] 在 tests/integration/test_registration.py 中进行用户注册集成测试
-- [ ] T007 [P] 在 tests/integration/test_auth.py 中进行认证流程集成测试
+- [ ] T015 [P] 在 tests/contract/test_users_post.py 中进行 POST /api/users 合约测试
+- [ ] T016 [P] 在 tests/contract/test_users_get.py 中进行 GET /api/users/{id} 合约测试
+- [ ] T017 [P] 在 tests/integration/test_registration.py 中进行用户注册集成测试
+- [ ] T018 [P] 在 tests/integration/test_auth.py 中进行认证流程集成测试
+- [ ] T019 [P] UI 组件测试（React Testing Library / Jest）
+- [ ] T020 [P] 端到端测试（Cypress / Playwright）
+- [ ] T021 [P] 可访问性测试（axe-core）
+- [ ] T022 [P] 响应式设计测试（不同屏幕尺寸）
 
-## 阶段3.3：核心实施（仅在测试失败后）
-- [ ] T008 [P] 在 src/models/user.py 中创建用户模型
-- [ ] T009 [P] 在 src/services/user_service.py 中创建 UserService CRUD
-- [ ] T010 [P] 在 src/cli/user_commands.py 中创建 CLI --create-user
-- [ ] T011 POST /api/users 端点
-- [ ] T012 GET /api/users/{id} 端点
-- [ ] T013 输入验证
-- [ ] T014 错误处理和日志记录
+## 阶段3.4：核心实施（仅在测试失败后）
+- [ ] T023 [P] 在 src/models/user.py 中创建用户模型
+- [ ] T024 [P] 在 src/services/user_service.py 中创建 UserService CRUD
+- [ ] T025 [P] 在 src/cli/user_commands.py 中创建 CLI --create-user
+- [ ] T026 实现主要页面和路由
+- [ ] T027 实现用户界面和交互功能
+- [ ] T028 POST /api/users 端点
+- [ ] T029 GET /api/users/{id} 端点
+- [ ] T030 前端状态管理实现
+- [ ] T031 输入验证和错误处理
+- [ ] T032 错误处理和日志记录
 
-## 阶段3.4：集成
-- [ ] T015 将 UserService 连接到数据库
-- [ ] T016 认证中间件
-- [ ] T017 请求/响应日志记录
-- [ ] T018 CORS 和安全头
+## 阶段3.5：集成
+- [ ] T033 将 UserService 连接到数据库
+- [ ] T034 前后端集成和 API 连接
+- [ ] T035 认证中间件和权限控制
+- [ ] T036 请求/响应日志记录
+- [ ] T037 CORS 和安全头
+- [ ] T038 UI 组件与业务逻辑集成
 
-## 阶段3.5：完善
-- [ ] T019 [P] 在 tests/unit/test_validation.py 中进行验证单元测试
-- [ ] T020 性能测试（<200ms）
-- [ ] T021 [P] 更新 docs/api.md
-- [ ] T022 删除重复代码
-- [ ] T023 运行 manual-testing.md
+## 阶段3.6：完善
+- [ ] T039 [P] 在 tests/unit/test_validation.py 中进行验证单元测试
+- [ ] T040 性能测试（<200ms）
+- [ ] T041 [P] 更新 docs/api.md
+- [ ] T042 [P] 更新 UX 设计文档和用户指南
+- [ ] T043 删除重复代码
+- [ ] T044 运行 manual-testing.md
+- [ ] T045 进行最终可用性测试验证
+- [ ] T046 跨浏览器和设备测试
+- [ ] T047 可访问性合规性检查
 
 ## 依赖关系
-- 测试（T004-T007）在实施（T008-T014）之前
-- T008 阻塞 T009、T015
-- T016 阻塞 T018
-- 实施在完善（T019-T023）之前
+- 设置任务（T001-T005）在最开始
+- UX 设计任务（T006-T014）与后端设置并行进行
+- 测试任务（T015-T022）在实施任务（T023-T032）之前
+- T023 阻塞 T024、T033
+- T027-T030 阻塞 T034、T038
+- 集成任务（T033-T038）在完善任务（T039-T047）之前
 
 ## 并行示例
 ```
-# 一起启动 T004-T007：
+# 第一批并行（设置阶段）：
+任务："设置 UI 开发环境和构建工具"
+任务："创建设计系统组件库结构"
+
+# 第二批并行（UX设计阶段）：
+任务："创建用户研究总结和用户画像文档"
+任务："实现信息架构和导航结构"
+任务："开发核心 UI 组件"
+
+# 第三批并行（测试阶段）：
 任务："在 tests/contract/test_users_post.py 中进行 POST /api/users 合约测试"
 任务："在 tests/contract/test_users_get.py 中进行 GET /api/users/{id} 合约测试"
-任务："在 tests/integration/test_registration.py 中进行注册集成测试"
-任务："在 tests/integration/test_auth.py 中进行认证集成测试"
+任务："UI 组件测试（React Testing Library / Jest）"
+任务："端到端测试（Cypress / Playwright）"
+
+# 第四批并行（实施阶段）：
+任务："在 src/models/user.py 中创建用户模型"
+任务："在 src/services/user_service.py 中创建 UserService CRUD"
+任务："实现主要页面和路由"
 ```
 
 ## 注意事项
@@ -100,20 +143,34 @@
 ## 任务生成规则
 *在主流程执行期间应用*
 
-1. **来自合约**：
+1. **来自 UX 设计文档**：
+   - ux-research.md → 用户研究任务 [P]
+   - ux-information-architecture.md → 信息架构任务 [P]
+   - ux-interaction-design.md → 交互设计任务 [P]
+   - ux-visual-design.md → 视觉设计任务 [P]
+   - ux-prototype.md → 原型设计任务 [P]
+
+2. **来自合约**：
    - 每个合约文件 → 合约测试任务 [P]
    - 每个端点 → 实施任务
-   
-2. **来自数据模型**：
+
+3. **来自数据模型**：
    - 每个实体 → 模型创建任务 [P]
    - 关系 → 服务层任务
-   
-3. **来自用户故事**：
+
+4. **来自用户故事**：
    - 每个故事 → 集成测试 [P]
    - 快速开始场景 → 验证任务
 
-4. **排序**：
-   - 设置 → 测试 → 模型 → 服务 → 端点 → 完善
+5. **UX 测试任务**：
+   - UI 组件测试 [P]
+   - 端到端测试 [P]
+   - 可访问性测试 [P]
+   - 响应式设计测试 [P]
+
+6. **排序**：
+   - 设置 → UX设计 → 测试 → 模型 → 服务 → 端点 → 集成 → 完善
+   - UX 任务与后端设置并行进行
    - 依赖阻塞并行执行
 
 ## 验证检查清单
@@ -121,7 +178,11 @@
 
 - [ ] 所有合约都有对应的测试
 - [ ] 所有实体都有模型任务
+- [ ] 所有 UX 设计文档都有对应的实施任务
 - [ ] 所有测试都在实施之前
+- [ ] 包含 UI 组件测试和端到端测试
+- [ ] 包含可访问性测试和响应式测试
 - [ ] 并行任务真正独立
 - [ ] 每个任务指定确切的文件路径
 - [ ] 没有任务修改与另一个 [P] 任务相同的文件
+- [ ] UX 设计任务与技术实施任务有适当的依赖关系

@@ -263,6 +263,47 @@ Different agents use different argument placeholders:
 4. **Directory naming**: Follow agent-specific conventions exactly
 5. **Help text inconsistency**: Update all user-facing text consistently
 
+## Command Extensions and Enhancements
+
+### New Validation Commands
+Recent additions to the Spec Kit command set include enhanced validation capabilities:
+
+#### `/validate` Command
+- **Purpose**: Comprehensive specification validation and requirement gap identification
+- **Implementation**: Cross-platform scripts with scope-based validation (business, technical, ux, security)
+- **Script Files**:
+  - `scripts/bash/validate-specification.sh`
+  - `scripts/powershell/validate-specification.ps1`
+
+#### `/validate-ux` Command (UX-Specific)
+- **Purpose**: Specialized validation for user experience design completeness and quality
+- **Focus Areas**: User research, interaction design, visual design, accessibility
+- **Implementation**: UX-focused validation with design quality metrics
+
+#### `/clarify-ux` Command (UX-Specific)
+- **Purpose**: Deep clarification of UX design requirements and user needs
+- **Focus Areas**: User personas, use scenarios, interaction patterns, accessibility needs
+- **Implementation**: Structured questioning framework for UX requirement discovery
+
+### Template Enhancements
+
+#### UX Design Integration
+- **spec-template.md**: Enhanced with comprehensive UX design sections
+- **ux-design-template.md**: Dedicated UX design documentation template
+- **plan-template.md**: Updated to include UX design phases
+- **tasks-template.md**: Enhanced with UX development tasks
+
+#### New Template Files
+- `traceability-template.md`: Requirements traceability matrix
+- Enhanced validation and clarification command templates
+
+### Script System Updates
+
+#### Cross-Platform Support
+All new validation and clarification commands include both bash and PowerShell implementations:
+- Bash scripts in `scripts/bash/`
+- PowerShell scripts in `scripts/powershell/`
+
 ## Future Considerations
 
 When adding new agents:
@@ -271,6 +312,12 @@ When adding new agents:
 - Document any special requirements or limitations
 - Update this guide with lessons learned
 
+When adding new commands or features:
+- Maintain cross-platform compatibility (bash + PowerShell)
+- Update template documentation
+- Consider integration with existing validation workflows
+- Test with multiple AI agents for compatibility
+
 ---
 
-*This documentation should be updated whenever new agents are added to maintain accuracy and completeness.*
+*This documentation should be updated whenever new agents or commands are added to maintain accuracy and completeness.*
