@@ -16,9 +16,11 @@
 
 - [🤔 什么是规格驱动开发？](#-什么是规格驱动开发)
 - [⚡ 快速开始](#-快速开始)
+- [🧠 Context Engineering 增强功能](#-context-engineering-增强功能)
 - [📽️ 视频概览](#️-视频概览)
 - [🤖 支持的AI代理](#-支持的ai代理)
 - [🔧 Specify CLI 参考](#-specify-cli-参考)
+- [🚀 新功能和增强命令](#-新功能和增强命令)
 - [📚 核心理念](#-核心理念)
 - [🌟 开发阶段](#-开发阶段)
 - [🎯 实验目标](#-实验目标)
@@ -113,6 +115,137 @@ uvx --from git+https://github.com/yet-tang/spec-kit.git specify init <项目名�
 
 有关详细的分步说明，请参阅我们的[综合指南](./spec-driven.md)。
 
+## 🧠 Context Engineering 增强功能
+
+Spec Kit 现已集成 **Context Engineering** 深度增强功能，提供智能化的上下文感知开发体验。这些增强功能通过深度分析项目上下文、自动化质量保证和智能决策支持，显著提升开发效率和代码质量。
+
+### 🎯 核心增强特性
+
+#### 1. 智能上下文收集器
+自动化的项目上下文分析和外部研究整合：
+
+```bash
+# 启动智能上下文收集
+/context-collect
+
+# 深度代码库分析
+/context-analyze codebase
+
+# 外部技术研究
+/context-research "React 18 最佳实践"
+```
+
+**功能特点：**
+- 🔍 **自动代码库扫描**：分析现有代码结构、依赖关系和架构模式
+- 📊 **复杂度智能评估**：基于多维度指标自动评估功能复杂度
+- 🌐 **外部知识整合**：自动获取最新技术文档和最佳实践
+- 🎯 **上下文相关性过滤**：智能筛选与当前项目最相关的信息
+
+#### 2. 增强规格模板系统
+基于 Context Engineering 理念的智能模板：
+
+- **`context-enhanced-spec-template.md`**：包含深度上下文分析的规格模板
+- **`context-enhanced-plan-template.md`**：智能化的实施计划模板
+- **`context-enhanced-tasks-template.md`**：上下文感知的任务生成模板
+
+**增强特性：**
+- 📋 **智能需求澄清**：基于项目上下文自动生成澄清问题
+- 🔄 **自适应验证循环**：动态调整验证策略
+- 🎨 **完整UX设计流程**：集成用户体验设计最佳实践
+- 🛡️ **风险智能识别**：自动识别潜在技术和业务风险
+
+#### 3. 智能验证和质量保证
+多层次的质量保证机制：
+
+```bash
+# 智能规格验证
+/validate-enhanced
+
+# 上下文一致性检查
+/validate-context
+
+# 质量门禁检查
+/quality-gate
+```
+
+**验证维度：**
+- ✅ **需求完整性验证**：确保所有业务需求得到充分覆盖
+- 🔧 **技术可行性分析**：评估技术方案的可行性和风险
+- 👥 **UX设计质量检查**：验证用户体验设计的完整性
+- 🔒 **安全合规性审查**：确保符合安全和合规要求
+
+### 🚀 Context Engineering 工作流程
+
+推荐使用以下增强工作流程：
+
+```bash
+# 1. 项目初始化（包含Context Engineering支持）
+specify init my-project --ai claude --context-enhanced
+
+# 2. 建立包含上下文感知的项目原则
+/constitution 创建包含Context Engineering原则的项目治理框架
+
+# 3. 启动智能上下文收集
+/context-collect
+
+# 4. 创建上下文增强的功能规格
+/specify-enhanced 构建用户认证系统，需要支持多因素认证和单点登录
+
+# 5. 智能需求澄清
+/clarify-enhanced
+
+# 6. 深度UX设计澄清
+/clarify-ux
+
+# 7. 创建上下文感知的实施计划
+/plan-enhanced 使用现代技术栈，注重安全性和可扩展性
+
+# 8. 生成智能任务列表
+/tasks-enhanced
+
+# 9. 多维度验证
+/validate-enhanced
+/validate-ux
+
+# 10. 跨工件一致性分析
+/analyze-enhanced
+
+# 11. 上下文感知的实施
+/implement-enhanced
+```
+
+### 📊 智能分析和报告
+
+Context Engineering 增强功能提供详细的分析报告：
+
+- **📈 复杂度分析报告**：多维度复杂度评估和建议
+- **🎯 风险评估矩阵**：技术风险和业务风险的全面分析
+- **📋 需求追溯矩阵**：从业务需求到实施的完整追溯
+- **🔍 质量指标仪表板**：实时质量指标监控
+
+### 🛠️ 增强脚本支持
+
+所有 Context Engineering 功能都包含完整的脚本支持：
+
+```bash
+# Bash 脚本示例
+./scripts/bash/context-analyze.sh --type codebase --output json
+./scripts/bash/get-feature-info.sh --feature user-auth --format detailed
+
+# PowerShell 脚本示例
+./scripts/powershell/context-analyze.ps1 -Type codebase -Output json
+./scripts/powershell/get-feature-info.ps1 -Feature user-auth -Format detailed
+```
+
+### 📚 Context Engineering 文档
+
+详细的使用指南和最佳实践：
+
+- **[Context Engineering 集成指南](./docs/context-engineering-integration-guide.md)**
+- **[智能上下文收集器使用手册](./templates/context/intelligent-context-collector.md)**
+- **[增强模板系统说明](./templates/)**
+- **[实际应用示例](./examples/context-enhanced-implementation-example.md)**
+
 ## 📽️ 视频概览
 
 想看看Spec Kit的实际操作吗？观看我们的[视频概览](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)！
@@ -161,6 +294,7 @@ uvx --from git+https://github.com/yet-tang/spec-kit.git specify init <项目名�
 | `--skip-tls`           | 标志     | 跳过SSL/TLS验证（不推荐）                                 |
 | `--debug`              | 标志     | 启用详细调试输出以进行故障排除                            |
 | `--github-token`       | 选项   | 用于API请求的GitHub令牌（或设置GH_TOKEN/GITHUB_TOKEN环境变量）  |
+| `--context-enhanced`   | 标志     | 启用Context Engineering增强功能，包含智能上下文收集和分析 |
 
 ### 示例
 
@@ -199,6 +333,9 @@ specify init my-project --ai claude --debug
 # 使用GitHub令牌进行API请求（对企业环境有帮助）
 specify init my-project --ai claude --github-token ghp_your_token_here
 
+# 启用Context Engineering增强功能
+specify init my-project --ai claude --context-enhanced
+
 # 检查系统要求
 specify check
 ```
@@ -219,6 +356,23 @@ specify check
 | `/validate-ux`  | 验证用户体验设计的完整性和质量，识别 UX 设计缺陷和改进机会 |
 | `/analyze`      | 跨工件一致性和覆盖率分析（在/tasks之后、/implement之前运行） |
 | `/implement`    | 执行所有任务以根据计划构建功能         |
+
+#### Context Engineering 增强命令
+
+| 命令 | 描述 |
+|------|------|
+| `/context-collect` | 启动智能上下文收集，自动分析项目环境和依赖 |
+| `/context-analyze` | 深度分析代码库结构、复杂度和架构模式 |
+| `/context-research` | 外部技术研究和最佳实践整合 |
+| `/specify-enhanced` | 创建包含深度上下文分析的增强规格说明 |
+| `/clarify-enhanced` | 基于项目上下文的智能需求澄清 |
+| `/plan-enhanced` | 生成上下文感知的智能实施计划 |
+| `/tasks-enhanced` | 创建基于复杂度分析的智能任务列表 |
+| `/validate-enhanced` | 多维度智能验证（需求、技术、UX、安全） |
+| `/validate-context` | 验证上下文一致性和完整性 |
+| `/analyze-enhanced` | 增强的跨工件一致性和质量分析 |
+| `/implement-enhanced` | 上下文感知的智能实施执行 |
+| `/quality-gate` | 质量门禁检查和准备就绪评估 |
 
 ### 环境变量
 
@@ -412,18 +566,45 @@ Spec Kit 现在完全支持用户体验（UX）驱动的规范驱动开发，确
 
 ## 🔧 系统要求
 
+### 基础要求
+
 - **Linux/macOS**（或Windows上的WSL2）
 - AI编码代理：[Claude Code](https://www.anthropic.com/claude-code)、[GitHub Copilot](https://code.visualstudio.com/)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)、[Cursor](https://cursor.sh/)、[Qwen CLI](https://github.com/QwenLM/qwen-code)、[opencode](https://opencode.ai/)、[Codex CLI](https://github.com/openai/codex) 或 [Windsurf](https://windsurf.com/)
 - [uv](https://docs.astral.sh/uv/) 用于包管理
 - [Python 3.11+](https://www.python.org/downloads/)
 - [Git](https://git-scm.com/downloads)
 
+### Context Engineering 增强功能额外要求
+
+启用 Context Engineering 增强功能时，建议满足以下额外要求：
+
+- **内存**：至少 8GB RAM（推荐 16GB）用于复杂项目的上下文分析
+- **存储空间**：额外 2GB 用于上下文缓存和分析数据
+- **网络连接**：用于外部技术研究和最佳实践获取
+- **AI模型支持**：推荐使用支持长上下文的高级AI模型（如 Claude 3.5 Sonnet、GPT-4 等）
+
 如果您在使用代理时遇到问题，请提交issue，以便我们改进集成。
 
 ## 📖 了解更多
 
+### 核心文档
+
 - **[完整的规格驱动开发方法论](./spec-driven.md)** - 深入了解完整过程
 - **[详细演练](#-详细流程)** - 分步实施指南
+
+### Context Engineering 增强功能文档
+
+- **[Context Engineering 集成指南](./docs/context-engineering-integration-guide.md)** - 深度融合架构和实施指南
+- **[智能上下文收集器](./templates/context/intelligent-context-collector.md)** - 自动化上下文分析工具
+- **[增强模板系统](./templates/)** - Context Engineering 增强模板
+- **[脚本覆盖分析](./context-engineering-script-coverage-analysis.md)** - 脚本支持现状和规划
+- **[实际应用示例](./examples/context-enhanced-implementation-example.md)** - 电商平台用户认证系统案例
+
+### 技术参考
+
+- **[UX 设计指南](./docs/ux-design-guide.md)** - 用户体验设计最佳实践
+- **[需求追溯模板](./templates/traceability-template.md)** - 需求到实施的完整追溯
+- **[验证框架](./templates/validation/)** - 多维度质量验证体系
 
 ---
 
@@ -530,6 +711,64 @@ AI将分析您的规格说明并询问澄清问题，以确保所有需求都得
 
 AI将根据您的规格说明和计划系统地实施功能。
 
+### Context Engineering 增强工作流程
+
+如果您启用了 Context Engineering 增强功能，推荐使用以下增强工作流程：
+
+#### 第1步：增强项目初始化
+
+```bash
+specify init my-project --ai claude --context-enhanced
+```
+
+#### 第2步：智能上下文收集
+
+```bash
+/context-collect
+```
+
+这将自动分析您的项目环境、依赖关系和代码结构。
+
+#### 第3步：创建增强规格说明
+
+```bash
+/specify-enhanced 构建用户认证系统，支持多因素认证
+```
+
+#### 第4步：智能需求澄清
+
+```bash
+/clarify-enhanced
+/clarify-ux  # 如果涉及用户体验设计
+```
+
+#### 第5步：生成智能实施计划
+
+```bash
+/plan-enhanced 使用现代技术栈，注重安全性和可扩展性
+```
+
+#### 第6步：创建智能任务列表
+
+```bash
+/tasks-enhanced
+```
+
+#### 第7步：多维度验证
+
+```bash
+/validate-enhanced
+/validate-context
+/quality-gate
+```
+
+#### 第8步：增强分析和实施
+
+```bash
+/analyze-enhanced
+/implement-enhanced
+```
+
 </details>
 
 ## 🔍 故障排除
@@ -546,7 +785,16 @@ A: 确保您对目标目录有写权限，或使用 `sudo` 运行命令（如果
 A: 确保您在正确初始化的Specify项目中，并且您的AI代理支持自定义命令。
 
 **Q: 生成的代码质量不佳**
-A: 检查您的 `constitution.md` 文件是否包含清晰的质量标准，并确保您的规格说明足够详细。
+A: 检查您的 `constitution.md` 文件是否包含清晰的质量标准，并确保您的规格说明足够详细。如果启用了Context Engineering增强功能，使用 `/quality-gate` 命令进行质量检查。
+
+**Q: Context Engineering 增强功能不工作**
+A: 确保在项目初始化时使用了 `--context-enhanced` 标志，并检查是否存在 `templates/context/` 目录和相关的增强模板文件。
+
+**Q: 智能上下文收集失败**
+A: 检查项目目录结构是否完整，确保有足够的权限访问项目文件。使用 `--debug` 标志获取详细的错误信息。
+
+**Q: 增强命令返回错误**
+A: 确保您使用的是支持Context Engineering增强功能的最新版本。某些增强命令需要先运行 `/context-collect` 来收集必要的上下文信息。
 
 ### 获取帮助
 
